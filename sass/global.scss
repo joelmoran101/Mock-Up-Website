@@ -1,0 +1,52 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+
+main.main-container{
+    background-color: bisque;
+    padding-inline: 1em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, minmax(100px, auto));
+    grid-template-areas: 
+    "main-sb  main-sb   main-sb   header   header  header   header   header   header   header   header   header "
+    "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body "
+    "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body "
+    "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body "
+    "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body "
+    "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body "
+    "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body "
+    "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body "
+    ;
+    
+    aside.main-sidebar{
+        background-color: rgb(235, 205, 205);
+        grid-area: main-sb;
+        display: flex;    
+        .MainSidebar{
+            flex: 1;
+        }
+    }
+
+
+    header.main-header{
+        background-color: rgb(193, 193, 243);
+        grid-area: header;
+    }
+    aside.second-sidebar{
+        background-color: darkseagreen;
+        grid-area: second-sb;
+    }
+    div.main-body{
+        grid-area: main-body;
+        table{
+            width: 100%;
+            th{
+                // th have text align center by default
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+
+

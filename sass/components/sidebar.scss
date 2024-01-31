@@ -1,0 +1,55 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+
+
+.MainSidebar {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    max-height: 100%vh;
+    color: rgb(229, 220, 220);
+
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 3em;
+    }
+
+        nav li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 1.8em; 
+        }
+        nav li::before{
+            margin-right: .5em;
+            font-family: 'FontAwesome';
+        }
+        nav li:hover{
+            background-color: rgb(134, 134, 232);
+            color: white;
+        }
+
+            nav li.manage::before {
+                content: "\f109"; 
+            }
+
+            nav li.user-info::before {
+                content: "\f007"; 
+            }
+
+            nav li.product::before {
+                content: "\f083"; 
+            }
+
+            nav li.order::before {
+                content: "\f07a"; 
+            }
+
+            nav li.system::before {
+                content: "\f789"; 
+            }
+
+            nav li.setting::before {
+                content: "\f013"; 
+            }
+}

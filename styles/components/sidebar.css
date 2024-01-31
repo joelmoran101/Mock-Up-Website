@@ -1,0 +1,47 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+.MainSidebar {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  max-height: 100% vh;
+  color: rgb(229, 220, 220);
+}
+.MainSidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 3em;
+}
+.MainSidebar nav li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 1.8em;
+}
+.MainSidebar nav li::before {
+  margin-right: 0.5em;
+  font-family: "FontAwesome";
+}
+.MainSidebar nav li:hover {
+  background-color: rgb(134, 134, 232);
+  color: white;
+}
+.MainSidebar nav li.manage::before {
+  content: "\f109";
+}
+.MainSidebar nav li.user-info::before {
+  content: "\f007";
+}
+.MainSidebar nav li.product::before {
+  content: "\f083";
+}
+.MainSidebar nav li.order::before {
+  content: "\f07a";
+}
+.MainSidebar nav li.system::before {
+  content: "\f789";
+}
+.MainSidebar nav li.setting::before {
+  content: "\f013";
+}
+
+/*# sourceMappingURL=sidebar.css.map */
