@@ -1,0 +1,31 @@
+.SecondSidebar {
+  font-size: 1em;
+  grid-area: second-sb;
+  background-color: rgb(237, 239, 243);
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  max-height: 100% vh;
+  color: rgb(96, 92, 92);
+  align-items: stretch;
+}
+
+.SecondSidebar h1 {
+  background-color: rgb(237, 239, 243);
+  color: rgb(154, 159, 172);
+  padding: 0;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.SecondSidebar a {
+  background-color: rgb(247, 248, 251);
+  color: rgb(154, 159, 172);
+  text-decoration: none;
+  font-size: 1.5em;
+  padding-block: 2em;
+  padding-left: 1em;
+  justify-items: baseline;
+}
+
+/*# sourceMappingURL=second-sidebar.css.map */

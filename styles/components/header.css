@@ -1,52 +1,45 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
 .HeaderComponent nav ul {
-  background-color: white;
+  background-color: rgb(248, 249, 253);
   display: flex;
-  min-width: auto;
-  max-width: 100% vw;
   justify-content: space-between;
-}
-
-nav ul {
-  list-style-type: none;
+  align-items: center;
+  max-width: 100%;
   padding: 0;
-  padding-top: 3.5em;
+  padding-block: 3.5em;
+  list-style-type: none;
 }
-
-nav li {
-  font-size: 1.5em;
+.HeaderComponent nav li {
+  font-size: 2.5em;
+  color: rgb(115, 165, 166);
   position: relative;
   padding-left: 20px;
-  margin-bottom: 1.8em;
 }
-
-nav li::before {
+.HeaderComponent nav li::before {
   margin-right: 0.5em;
   font-family: "FontAwesome";
 }
-
-nav li:hover {
-  background-color: rgb(134, 134, 232);
-  color: white;
+.HeaderComponent nav li:hover {
+  color: black;
 }
-
-nav li.menu::before {
+.HeaderComponent nav li.menu::before {
   content: "\f0c9";
-  color: rgb(115, 165, 166);
 }
-
-nav li.mail::before {
-  content: "\f0e0";
-  color: rgb(115, 165, 166);
+.HeaderComponent nav li.mail::after {
+  font-family: "FontAwesome";
+  content: "\f0d7";
 }
-
-nav li.mail i {
-  color: rgb(115, 165, 166);
+.HeaderComponent nav li.mail i {
+  color: inherit;
 }
-
-.user-profile {
-  height: 1em;
-  width: auto;
+.HeaderComponent .user-profile .img-size {
+  vertical-align: middle;
+  width: 2em;
+  border-radius: 50%;
+}
+.HeaderComponent .mail-user-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=header.css.map */

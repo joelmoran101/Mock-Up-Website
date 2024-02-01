@@ -4,17 +4,12 @@ html, body {
   padding: 1em;
 }
 
-:root {
-  font-size: 62.5%;
-}
-
 main.main-container {
-  background-color: bisque;
   padding-inline: 1em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, minmax(100px, auto));
-  grid-template-areas: "main-sb  main-sb   main-sb   header   header  header   header   header   header   header   header   header " "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body " "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body " "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body " "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body " "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body " "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body " "main-sb  main-sb   main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body ";
+  grid-template-areas: "main-sb  main-sb   header      header     header      header      header      header      header      header      header       header " "main-sb  main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body    main-body " "main-sb  main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body    main-body " "main-sb  main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body    main-body " "main-sb  main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body    main-body " "main-sb  main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body    main-body " "main-sb  main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body    main-body " "main-sb  main-sb   second-sb   second-sb  main-body   main-body   main-body   main-body   main-body   main-body   main-body    main-body ";
 }
 main.main-container aside.main-sidebar {
   background-color: rgb(235, 205, 205);
@@ -35,11 +30,38 @@ main.main-container aside.second-sidebar {
 main.main-container div.main-body {
   grid-area: main-body;
 }
-main.main-container div.main-body table {
+main.main-container div.main-body table.product-list-table {
+  background-color: rgb(237, 239, 243);
+  padding: 1em;
+  border-spacing: 0 1em;
   width: 100%;
+  height: 100%;
 }
-main.main-container div.main-body table th {
+main.main-container div.main-body table.product-list-table tbody tr {
+  background-color: chocolate;
+}
+main.main-container div.main-body table.product-list-table tbody tr td {
+  padding-block: 1em;
+}
+main.main-container div.main-body table.product-list-table tbody tr td:first-of-type {
+  padding-left: 0.7em;
+  border-radius: 0.5em 0 0 0.5em;
+}
+main.main-container div.main-body table.product-list-table tbody tr td:last-of-type {
+  padding-right: 0.7em;
+  border-radius: 0 0.5em 0.5em 0;
+}
+main.main-container div.main-body table.product-list-table th {
   text-align: left;
+}
+
+thead.thead-container {
+  background-color: rgb(237, 239, 243);
+  box-sizing: border-box;
+}
+
+.img-size {
+  width: 2em;
 }
 
 /*# sourceMappingURL=global.css.map */

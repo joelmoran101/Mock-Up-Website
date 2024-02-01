@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="./styles/components/sidebar.css">
     <link rel="stylesheet" href="/styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/second-sidebar.css">
 </head>
 <body>
     <main class="main-container">
@@ -32,23 +33,33 @@
                     <li class="menu">
                         <a href="'"></a>
                     </li>
-                    <li class="mail">
-                        <i class="fa-solid fa-sort-down"></i>
-                    </li>
-                    <li class="user-profile" >User Name
-                        <!-- <img src="../assets/images/portrait.jpeg" alt=""> -->
+                    <div class="mail-user-wrapper">
+                        <li class="mail">
+                            <i class="fa-regular fa-envelope"></i>
+                        </li>
+                        <li class="user-profile" >User Name
+                            <img class="img-size" src="../assets/images/portrait.jpeg" alt="">
+                        </li>
+                    </div>
                 </ul>
             </nav>           
         </header>
 
-        <aside class="second-sidebar">2nd Sidebar</aside>
+        <aside class="SecondSidebar">
+            <h1 class="product-sidebar-header">Product</h1>
+            <a href="'">Category</a>
+            <a href="'">Soldout</a>
+            <a href="'">Record</a>
+        
+        </aside>
 
         <div class="main-body">
             <header class="product-list-header">
+                <!-- insert Product List Header here-->
             </header>
 
             <table class="product-list-table">
-                <thead>
+                <thead class="thead-container">
                     <tr>
                      <th> <input type="checkbox"> </th>
                      <th>PID</th>
@@ -65,8 +76,41 @@
                 <tbody>
                     <tr>
                         <td> <input type="checkbox"> </td>
+                        <td>Backpack</td>
+                        <td><img class="img-size" src="./assets/images/backpack.jpg" alt="Backpack"></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>check icon</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox"> </td>
+                        <td>Backpack</td>
+                        <td><img class="img-size" src="./assets/images/backpack.jpg" alt="Backpack"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>check icon</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox"> </td>
+                        <td>Backpack</td>
+                        <td><img class="img-size" src="./assets/images/backpack.jpg" alt="Backpack"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>check icon</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox"> </td>
+                        <td>Backpack</td>
+                        <td><img class="img-size" src="./assets/images/backpack.jpg" alt="Backpack"></td>
                         <td></td>
                         <td></td>
                         <td></td>
