@@ -1,4 +1,4 @@
-// @use base
+@use "./base";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
 
 main.main-container{
@@ -28,7 +28,7 @@ main.main-container{
     }
 
 
-    header.main-header{
+    header.HeaderComponent{
         background-color: rgb(193, 193, 243);
         grid-area: header;
     }

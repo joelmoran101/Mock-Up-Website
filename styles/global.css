@@ -1,4 +1,13 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+html, body {
+  margin: 1em;
+  padding: 1em;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
 main.main-container {
   background-color: bisque;
   padding-inline: 1em;
@@ -15,7 +24,7 @@ main.main-container aside.main-sidebar {
 main.main-container aside.main-sidebar .MainSidebar {
   flex: 1;
 }
-main.main-container header.main-header {
+main.main-container header.HeaderComponent {
   background-color: rgb(193, 193, 243);
   grid-area: header;
 }
