@@ -41,7 +41,7 @@ main.main-container div.main-body table.product-list-table tbody tr {
   background-color: white;
 }
 main.main-container div.main-body table.product-list-table tbody tr td {
-  padding-block: 1em;
+  padding-block: 0.5em;
 }
 main.main-container div.main-body table.product-list-table tbody tr td:first-of-type {
   padding-left: 0.7em;
