@@ -38,7 +38,7 @@ main.main-container div.main-body table.product-list-table {
   height: 100%;
 }
 main.main-container div.main-body table.product-list-table tbody tr {
-  background-color: chocolate;
+  background-color: white;
 }
 main.main-container div.main-body table.product-list-table tbody tr td {
   padding-block: 1em;
